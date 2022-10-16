@@ -41,6 +41,7 @@ conn().then(() => {
             const student = new student_table({ roll_no: 71, name: 'sanosh', gender: 'male', class_no: classs });
             student.save();
             resolve("success")
+            //code to insert multiple data
                 /* const student1 = new student_table({ roll_no: 71, name: 'sanosh' });
                  const student2 = new student_table({ roll_no: 72, name: 'saniya' });
                  const student3 = new student_table({ roll_no: 73, name: 'sanju' });
@@ -77,6 +78,7 @@ conn().then(() => {
                       console.log("deleted successfully")
                   }
               })
+              //to delete many data
         student_table.deleteMany((err) => {
             if (err) {
                 console.log(err);
